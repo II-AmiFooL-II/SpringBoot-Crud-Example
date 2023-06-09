@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  restapiexample:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+     - db
+
+  db:
+    image : mongo:latest
+    ports:
+      - 27017:27017
+    
