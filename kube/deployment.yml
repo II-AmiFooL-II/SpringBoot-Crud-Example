@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: app
-          image: restapiexample
+          image: shashankkuchibhotla/restapiexample
+          #imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
-          imagePullPolicy: Never
           env:
             - name: MONGO_URL
               value: mongodb://mongo:27017/JavaCrud
