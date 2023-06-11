@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restapiexample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: restapiexample
+  template:
+    metadata:
+      labels:
+        app: restapiexample
+    spec:
+      containers:
+        - name: app
+          image: restapiexample
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Never
+          env:
+            - name: MONGO_URL
+              value: mongodb://mongo:27017/JavaCrud
+# ... Deployment YAML definition
+---
+# ... Service YAML definition
+apiVersion: v1
+kind: Service
+metadata:
+  name: restapiexample
+spec:
+  #type: NodePort
+  selector:
+    app: restapiexample
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
