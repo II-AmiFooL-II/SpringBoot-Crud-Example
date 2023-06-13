@@ -23,8 +23,8 @@ java -jar MyJavaBuild.jar
 ```
 
 ## Working Images
-![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/blob/main/CreateServers.png?raw=true)
-![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/blob/main/DeleteId.png?raw=true)
-![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/blob/main/GetAll.png?raw=true)
-![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/blob/main/GetAllId.png?raw=true)
-![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/blob/main/GetAllName.png?raw=true)
+![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/tree/main/TestingPictures/CreateServers.png?raw=true)
+![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/tree/main/TestingPictures/DeleteId.png?raw=true)
+![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/tree/main/TestingPictures/GetAll.png?raw=true)
+![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/tree/main/TestingPictures/GetAllId.png?raw=true)
+![alt text](https://github.com/II-AmiFooL-II/SpringBoot-Crud-Example/tree/main/TestingPictures/GetAllName.png?raw=true)
