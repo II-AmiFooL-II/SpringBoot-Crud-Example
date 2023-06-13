@@ -17,6 +17,7 @@ public class ServerController {
     @Autowired
     private ServerRepository repo;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/Servers/{id}")
     public ResponseEntity<Optional<Server>> getServerById(@PathVariable("id") int id) {
         log.info("getServer with "+Integer.toString(id));
@@ -27,6 +28,7 @@ public class ServerController {
         return new ResponseEntity<Optional<Server>>(response, HttpStatus.ACCEPTED);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/Servers")
     public ResponseEntity<List<Server>> getServer() {
         log.info("Gets all server");
@@ -37,6 +39,7 @@ public class ServerController {
         return new ResponseEntity<List<Server>>(response, HttpStatus.ACCEPTED);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/Servers_with_name/{name}")
     public ResponseEntity<List<Server>> getServerByName(@PathVariable("name")  String serverName) {
         log.info("getServer with server name : "+serverName);
@@ -47,6 +50,7 @@ public class ServerController {
         return new ResponseEntity<List<Server>>(response, HttpStatus.ACCEPTED);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("/Servers")
     public ResponseEntity<String> createServer(@RequestBody Server server) {
         log.info("setsServer with server name : "+server.toString());
@@ -54,6 +58,7 @@ public class ServerController {
         return new ResponseEntity<String>("created server object ", HttpStatus.CREATED);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/Servers/{id}")
     public ResponseEntity<String> deleteTutorial(@PathVariable("id") int id) {
         log.info("deletes Server with server id : "+Integer.toString(id));
